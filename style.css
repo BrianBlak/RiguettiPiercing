@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'holiday';
+    src: url(Fontes/HolidayFree.otf);
+}
+.container {
+    height: 1000px;
+    background-color: aqua;
+    background-image: url(IMG/fundo.png);
+    justify-content: center;
+    align-items: auto;
+    display:flex;
+    padding:30px;
+    text-align: center;
+    position: relative;
+    
+}
+
+.unicornio {
+    align-items: top;
+    display: flex;
+    justify-content:center;
+    width: 200px;
+    height: 300px;
+}
+
+.titulo {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #DC4F97;
+    font-family: holiday;
+    }
+.nome {
+    color: black;
+    font-size: 15;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.whatsapp {
+    text-decoration: #fff;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #E980B3;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.whatsapp:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+.catalogo {
+    text-decoration: none;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #DC4F97;
+    top: 56%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+    color: #fff;
+}
+
+.catalogo:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+.instagram {
+    text-decoration: none;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #E980B3;
+    top: 62%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.instagran:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+.twitter {
+    text-decoration: none;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #DC4F97;
+    top: 68%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.twitter:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+.endereço{
+    text-decoration: none;
+    width: 160px;
+    text-align: center;
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: #E980B3;
+    top: 74%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.endereço:hover {
+    box-shadow: 2px 2px 2px black;
+}
+
+
+    
