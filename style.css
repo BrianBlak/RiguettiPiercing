@@ -1,25 +1,24 @@
 @font-face {
-    font-family: 'holiday';
-    src: url(Fontes/HolidayFree.otf);
+    font-family: 'Poppins';
+    src: url(Fontes/Poppins-ExtraLight.ttf);
 }
 .container {
     height: 1000px;
-    background-color: aqua;
-    background-image: url(IMG/fundo.png);
+    background-image: url(IMG/Fundo2.png);
+    background-size: 100%;
     justify-content: center;
     align-items: auto;
     display:flex;
     padding:30px;
     text-align: center;
     position: relative;
-    
 }
 
 .unicornio {
     align-items: top;
     display: flex;
     justify-content:center;
-    width: 200px;
+    width: 700px;
     height: 300px;
 }
 
@@ -27,18 +26,14 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    display: inline-block;
     top: 40%;
-    left: 50%;
+    left:50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    color: #DC4F97;
-    font-family: holiday;
+    color: #A0004B;
+    font-family: Poppins;
     }
-.nome {
-    color: black;
-    font-size: 15;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
 
 .whatsapp {
     text-decoration: #fff;
@@ -47,7 +42,7 @@
     padding: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    background-color: #E980B3;
+    background-color: #A0004B;
     top: 50%;
     left: 50%;
     position: absolute;
@@ -62,14 +57,14 @@
     box-shadow: 2px 2px 2px black;
 }
 
-.catalogo {
+.loja {
     text-decoration: none;
     width: 160px;
     text-align: center;
     padding: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    background-color: #DC4F97;
+    background-color: #780A3E;
     top: 56%;
     left: 50%;
     position: absolute;
@@ -91,7 +86,7 @@
     padding: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    background-color: #E980B3;
+    background-color: #3F0520;
     top: 62%;
     left: 50%;
     position: absolute;
@@ -106,14 +101,14 @@
     box-shadow: 2px 2px 2px black;
 }
 
-.twitter {
+.trabalhos {
     text-decoration: none;
     width: 160px;
     text-align: center;
     padding: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    background-color: #DC4F97;
+    background-color: #780A3E;
     top: 68%;
     left: 50%;
     position: absolute;
@@ -135,7 +130,7 @@
     padding: 5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
-    background-color: #E980B3;
+    background-color: #A0004B;
     top: 74%;
     left: 50%;
     position: absolute;
@@ -149,6 +144,19 @@
 .endereço:hover {
     box-shadow: 2px 2px 2px black;
 }
+
+.motivacional {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 90%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #A0004B;
+    font-family: Poppins;
+    }
+
 
 
     
