@@ -56,12 +56,12 @@
 
   var FORA = [
     { id: 'septo', nome: 'Septo',
-      cic: '2 a 3 meses', joia: 'Argola clicker de titânio',
+      cic: '2 a 3 meses', joia: 'Argola clicker ou ferradura de titânio',
       nota: 'Fica no tecido fino entre as narinas, não na cartilagem. Dá pra esconder virando a joia pra dentro.' },
 
     { id: 'nostril', nome: 'Nostril',
       cic: '4 a 6 meses', joia: 'Labret de titânio',
-      nota: 'A asa do nariz. Começa com labret reto e troca pra argola quando estiver fechado.' },
+      nota: 'A aba do nariz. Começa com labret reto e troca pra argola quando estiver cicatrizado.' },
 
     { id: 'Medusa', nome: 'Medusa',
       cic: '2 a 3 meses', joia: 'Labret de titânio',
@@ -80,7 +80,7 @@
       nota: 'Superficial, então a joia certa importa muito pra não migrar.' },
 
     { id: 'lingua', nome: 'Língua',
-      cic: '4 a 8 semanas', joia: 'Barbela reta de titânio',
+      cic: '4 a 8 semanas', joia: 'Barbell reto de titânio',
       nota: 'Cicatriza rápido, mas os primeiros dias pedem comida fria e leve. Troco a haste por uma menor quando o inchaço baixa.' },
 
     { id: 'umbigo', nome: 'Umbigo',
@@ -88,7 +88,7 @@
       nota: 'Roupa justa, academia e praia atrapalham. Vale escolher uma época mais calma do ano.' },
 
     { id: 'mamilo', nome: 'Mamilo',
-      cic: '9 a 12 meses', joia: 'Barbela reta de titânio',
+      cic: '6 a 9 meses', joia: 'Barbell reto de titânio',
       nota: 'Cicatrização longa e exige paciência com a troca de joia. Atendo com total privacidade.' },
 
     { id: 'microdermal', nome: 'Microdermal',
