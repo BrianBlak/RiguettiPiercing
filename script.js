@@ -307,24 +307,93 @@
     trilho.appendChild(copia);
     trilho.classList.add('em-laco');
 
+    // A largura do trilho muda quando o celular gira, quando a barra do
+    // navegador recolhe ou quando as fontes chegam depois do primeiro
+    // cálculo. A medida fica numa função para poder ser refeita.
+    function medir() {
+      return (trilho.scrollWidth || trilho.offsetWidth) / 2;
+    }
+
     var laco = gsap.to(trilho, {
       xPercent: -50,
       ease: 'none',
-      duration: (trilho.scrollWidth / 2) / pxPorSegundo,
+      duration: Math.max(medir(), 1) / pxPorSegundo,
       repeat: -1
     });
 
-    // Conteúdo que se move sozinho precisa parar quando alguém quer olhar.
-    // Mouse, toque e foco de teclado seguram o laço.
-    function pausar() { laco.pause(); }
-    function seguir() { laco.play(); }
+    // Mudou a largura, a duração é refeita mantendo o ponto atual do
+    // percurso — recomeçar do zero daria um salto no meio da volta.
+    var larguraAnterior = trilho.scrollWidth;
+    function remedir() {
+      var agora = trilho.scrollWidth;
+      if (!agora || agora === larguraAnterior) { return; }
+      larguraAnterior = agora;
+      var ponto = laco.progress();
+      laco.duration(Math.max(agora / 2, 1) / pxPorSegundo);
+      laco.progress(ponto);
+    }
+    window.addEventListener('resize', remedir);
+    window.addEventListener('orientationchange', remedir);
 
-    trilho.addEventListener('pointerenter', pausar);
-    trilho.addEventListener('pointerleave', seguir);
-    trilho.addEventListener('touchstart', pausar, { passive: true });
-    trilho.addEventListener('touchend', seguir);
-    trilho.addEventListener('focusin', pausar);
-    trilho.addEventListener('focusout', seguir);
+    /* Conteúdo que se move sozinho precisa parar quando alguém quer olhar —
+       mas no celular era justamente isso que travava o laço de vez. Um toque
+       dispara 'pointerenter', e o 'pointerleave' correspondente muitas vezes
+       nunca chega (o hover fica grudado no elemento); e quando o gesto vira
+       rolagem da página, o navegador encerra em 'touchcancel', sem disparar
+       'touchend'. Nos dois casos o pause ficava sem o play de volta: a faixa
+       andava até onde estava e parava ali, sem nunca dar a volta.
+
+       Agora cada motivo de parada é um estado nomeado, e não um par
+       pause/play solto. O laço só fica parado enquanto algum motivo for
+       verdadeiro, então um evento de fim perdido não trava mais nada. */
+    var razoes = { mouse: false, toque: false, foco: false };
+    var soltarToque = null;
+
+    function aplicar() {
+      if (razoes.mouse || razoes.toque || razoes.foco) { laco.pause(); }
+      else { laco.play(); }
+    }
+
+    function marcar(nome, valor) { razoes[nome] = valor; aplicar(); }
+
+    function largarToque() {
+      clearTimeout(soltarToque);
+      soltarToque = null;
+      marcar('toque', false);
+    }
+
+    function segurarToque() {
+      clearTimeout(soltarToque);
+      marcar('toque', true);
+      // rede de segurança: mesmo que nenhum evento de fim chegue, o laço
+      // volta a andar sozinho
+      soltarToque = setTimeout(largarToque, 1600);
+    }
+
+    // hover só onde existe mouse de verdade: no celular ele é o hover
+    // grudado que não solta
+    if (temMouse) {
+      trilho.addEventListener('pointerenter', function () { marcar('mouse', true); });
+      trilho.addEventListener('pointerleave', function () { marcar('mouse', false); });
+    }
+
+    trilho.addEventListener('touchstart', segurarToque, { passive: true });
+    trilho.addEventListener('touchmove', segurarToque, { passive: true });
+    trilho.addEventListener('touchend', largarToque, { passive: true });
+    trilho.addEventListener('touchcancel', largarToque, { passive: true });
+    trilho.addEventListener('pointercancel', largarToque);
+
+    trilho.addEventListener('focusin', function () { marcar('foco', true); });
+    trilho.addEventListener('focusout', function () { marcar('foco', false); });
+
+    // Voltando de outra aba ou da tela bloqueada, nenhum toque antigo
+    // continua segurando a faixa.
+    document.addEventListener('visibilitychange', function () {
+      if (document.visibilityState !== 'visible') { return; }
+      razoes.toque = false;
+      if (!temMouse) { razoes.mouse = false; }
+      aplicar();
+    });
 
     return laco;
   }
@@ -569,10 +638,12 @@
   // foto a gente só olha, depoimento a gente lê.
   var lacoFb = montarLaco(trilho, 30);
 
-  // com o laço rodando, o que a pessoa precisa saber não é que dá pra
-  // arrastar — é que dá pra parar
-  if (lacoFb && dicaFb && temMouse) {
-    dicaFb.textContent = 'Passe o mouse para parar e ler';
+  // com o laço rodando não há rolagem nativa para arrastar: o que a pessoa
+  // precisa saber é que dá pra parar — e no celular isso é um toque
+  if (lacoFb && dicaFb) {
+    dicaFb.textContent = temMouse
+      ? 'Passe o mouse para parar e ler'
+      : 'Toque para parar e ler';
   }
 
   // As fontes chegam depois do primeiro cálculo e mudam a altura de tudo;
