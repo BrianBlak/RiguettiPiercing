@@ -1,45 +1,641 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riguetti Piercing</title>
-    <link rel="icon" a href="IMG/REDUZIDA 2.png">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riguetti Piercing — Bia Riguetti | Body piercing em Goiânia</title>
+<meta name="description" content="Estúdio de body piercing em Goiânia com a profissional Bia Riguetti. Agulha estéril de uso único, autoclave e joias de titânio ASTM F136. Atendimento com hora marcada e envio de joias para todo o Brasil.">
+<meta name="theme-color" content="#140610">
+<link rel="icon" href="IMG/REDUZIDA 2.png">
+<link rel="apple-touch-icon" href="IMG/REDUZIDA 2.png">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Riguetti Piercing — Bia Riguetti">
+<meta property="og:description" content="Body piercing em Goiânia. Agulha estéril, titânio implant-grade e hora marcada.">
+<meta property="og:image" content="IMG/REDUZIDA 2.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HealthAndBeautyBusiness",
+  "name": "Riguetti Piercing",
+  "image": "IMG/REDUZIDA 2.png",
+  "description": "Estúdio de body piercing em Goiânia. Agulha estéril de uso único, esterilização em autoclave e joias de titânio ASTM F136.",
+  "foundingDate": "2019",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. 1102, Qd 207, Lt 23 — Sala 7, Jardim América",
+    "addressLocality": "Goiânia",
+    "addressRegion": "GO",
+    "postalCode": "74265-170",
+    "addressCountry": "BR"
+  },
+  "telephone": "+5562985206461",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "377",
+    "bestRating": "5"
+  },
+  "sameAs": ["https://www.instagram.com/riguetti_piercing/"],
+  "availableService": { "@type": "Service", "name": "Aplicação de body piercing" }
+}
+</script>
+</head>
 <body>
-    <div class="container">
-        <div class="unicornio">
-            <img src="IMG/Logo_preto.png" height="100%" width="100%">
-        </div>
-        <div class="titulo">
-            <h1>Profissional <b>Bia Riguetti</b></h1>
-        </div>
-        <div class="whatsapp">
-            <a href="https://api.whatsapp.com/send?phone=5562985206461&text=+Oi+Bia,+gostaria+de+fazer+um+or%C3%A7amento"><button style="background: #A0004B ; border-radius: 6px; padding: 5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">WHATSAPP</button></a>
-        </div>
 
-        <div class="loja">
-            <a href="https://canva.link/4yxcpdrtk5fkw0d"><button style="background: #780A3E ; border-radius: 6px; padding: 5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">CATALÓGO</button></a>
-        </div>
+<!-- luz ambiente do estúdio + grão: ficam atrás de tudo, nunca recebem clique -->
+<div class="ambiente" aria-hidden="true">
+  <span class="luz luz-a"></span>
+  <span class="luz luz-b"></span>
+  <span class="luz luz-c"></span>
+</div>
+<div class="grao" aria-hidden="true"></div>
 
-        <div class="instagram">
-            <a href="https://www.instagram.com/riguetti_piercing/?igshid=YmMyMTA2M2Y%3D"><button style="background: #A0004B ; border-radius: 6px; padding: 5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">INSTAGRAM</button></a>
-        </div>
+<a class="pular" href="#mapa">Pular para o mapa de piercings</a>
 
-        <div class="trabalhos">
-            <a href="https://twitter.com/bia_piercer?t=3RoiuE1m-vuMUmDeHy3wUg&s=09"><button style="background: #780A3E ; border-radius: 6px; padding: 5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">TRABALHOS+18</button></a>
-        </div>
+<header class="topo" id="topo">
+  <a class="topo-marca" href="#topo" aria-label="Riguetti Piercing — início">
+    <img src="IMG/Logo_branco.png" alt="Riguetti Piercing" width="170" height="74">
+  </a>
 
-        <div class="endereço">
-            <a href="https://www.google.com/maps/place/Riguetti+Piercing+-+Jardim+América,+Goiânia+-+GO,+74265-170/data=!4m2!3m1!1s0x935ef714e10129b1:0xd00a0fe90587ea52?utm_source=mstt_1&entry=gps"><button style="background: #A0004B ; border-radius: 6px; padding: 5px; cursor: pointer; color: #fff; border: none; font-size: 16px;">ENDEREÇO</button></a>
+  <nav class="topo-nav" aria-label="Seções da página">
+    <a href="#mapa">Mapa</a>
+    <a href="#sessao">Como é</a>
+    <a href="#seguranca">Segurança</a>
+    <a href="#joias">Joias</a>
+    <a href="#intimas">Íntimas</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#feedbacks">Feedbacks</a>
+    <a href="#cuidados">Dúvidas</a>
+  </nav>
+
+  <a class="btn btn-zap topo-zap" data-zap="Oi Bia! Vim pelo site e gostaria de agendar um piercing.">Agendar</a>
+
+  <button class="topo-menu" id="abrir-menu" type="button"
+          aria-expanded="false" aria-controls="menu-movel" aria-label="Abrir o menu">
+    <span class="topo-menu-traco"></span>
+    <span class="topo-menu-traco"></span>
+  </button>
+</header>
+
+<!-- menu de celular: a navegação some abaixo de 900px, então ela mora aqui -->
+<div class="menu-movel" id="menu-movel" hidden>
+  <nav aria-label="Seções da página">
+    <a href="#mapa">Mapa de piercings</a>
+    <a href="#sessao">Como é a sessão</a>
+    <a href="#seguranca">Segurança</a>
+    <a href="#joias">Joias e catálogo</a>
+    <a href="#intimas">Perfurações íntimas</a>
+    <a href="#trabalhos">Trabalhos</a>
+    <a href="#feedbacks">Feedbacks</a>
+    <a href="#cuidados">Dúvidas</a>
+    <a href="#contato">Onde fica</a>
+  </nav>
+  <a class="btn btn-zap btn-grande" data-zap="Oi Bia! Vim pelo site e gostaria de agendar um piercing.">Chamar no WhatsApp</a>
+</div>
+
+<main>
+
+  <!-- ========== HERÓI: mapa interativo ========== -->
+  <section class="mapa" id="mapa">
+    <div class="mapa-texto">
+      <h1 class="chamada">
+        <span>Você escolhe</span>
+        <span>o lugar.</span>
+        <span>Eu cuido</span>
+        <span>do resto.</span>
+      </h1>
+
+      <p class="chamada-sub">
+        Body piercing em Goiânia com a Bia Riguetti, body piercer desde 2019.
+        Toque em um ponto da orelha e veja quanto tempo ele leva pra cicatrizar,
+        qual joia entra primeiro e o que esperar da sessão.
+      </p>
+
+      <a class="selo" href="https://www.google.com/maps/place/Riguetti+Piercing+-+Jardim+Am%C3%A9rica,+Goi%C3%A2nia+-+GO,+74265-170/data=!4m2!3m1!1s0x935ef714e10129b1:0xd00a0fe90587ea52" target="_blank" rel="noopener">
+        <span class="selo-nota">5,0</span>
+        <span class="selo-estrelas" aria-hidden="true">★★★★★</span>
+        <span class="selo-texto">400+ avaliações no Google</span>
+      </a>
+    </div>
+
+    <div class="mapa-arte">
+      <svg class="orelha" viewBox="112 40 232 470" role="img" aria-labelledby="orelha-titulo">
+        <title id="orelha-titulo">Mapa de uma orelha com os pontos de perfuração disponíveis</title>
+
+        <!-- titânio anodizado: a sequência real de cores que o metal assume
+             conforme a voltagem sobe (violeta, prata, magenta, teal) -->
+        <defs>
+          <linearGradient id="titanio" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0"   stop-color="#9B7BE8"/>
+            <stop offset=".34" stop-color="#EDE6EF"/>
+            <stop offset=".68" stop-color="#E8106E"/>
+            <stop offset="1"   stop-color="#2FA89B"/>
+          </linearGradient>
+        </defs>
+
+        <g class="traco" fill="none" stroke="url(#titanio)" stroke-width="2.4"
+           stroke-linecap="round" stroke-linejoin="round">
+          <path d="M150 78 C198 36 272 54 300 124 C326 190 318 266 300 328 C284 384 264 436 226 466 C190 494 144 482 134 444 C126 412 138 388 148 368"/>
+          <path d="M148 368 C156 346 152 318 148 296 C142 258 140 200 146 150 C149 124 148 98 150 78"/>
+          <path d="M160 112 C202 76 258 92 278 148 C296 200 290 258 276 306"/>
+          <path d="M228 170 C206 198 200 236 206 268 C210 294 222 320 232 344"/>
+          <path d="M228 170 C246 196 250 222 246 248"/>
+          <path d="M228 170 C210 158 192 160 180 176"/>
+          <path d="M206 268 C188 278 176 300 176 322 C176 348 192 366 210 372"/>
+          <path d="M150 296 C168 288 184 300 184 322 C184 342 170 354 152 352"/>
+          <path d="M210 372 C224 376 232 388 230 402 C229 410 224 416 218 420"/>
+        </g>
+
+        <g class="pontos" id="pontos"></g>
+      </svg>
+
+      <p class="orelha-dica" id="orelha-dica">Toque nos pontos</p>
+    </div>
+
+    <div class="mapa-ficha">
+      <!-- painel preenchido pelo script -->
+      <div class="ficha" id="ficha" aria-live="polite">
+        <p class="ficha-vazia">Nenhum ponto selecionado ainda.</p>
+      </div>
+    </div>
+
+    <div class="mapa-chips">
+      <div class="chips" role="group" aria-label="Piercings de rosto e corpo">
+        <span class="chips-titulo">Também faço fora da orelha</span>
+        <div class="chips-lista" id="chips"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SEGURANÇA ========== -->
+  <!-- Vem logo depois do herói: é a primeira dúvida de quem nunca furou nada. -->
+  <section class="seguranca" id="seguranca">
+    <div class="seg-intro">
+      <h2 class="titulo-secao">O que te protege aqui</h2>
+      <p class="seg-linha">Perfuração é procedimento, não é acessório de loja.
+         Três coisas não são negociáveis no meu atendimento.</p>
+    </div>
+
+    <div class="seg-itens">
+      <article>
+        <span class="seg-marca" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M8 32 L26 14"/><path d="M24 8 L32 16 L28 20 L20 12 Z"/><path d="M8 32 l-2 2"/>
+          </svg>
+        </span>
+        <h3>Agulha, nunca pistola</h3>
+        <p>A agulha corta e abre caminho para a joia. A pistola esmaga o tecido, não
+           pode ser esterilizada de verdade e deixa a cicatrização muito mais difícil —
+           inclusive no lóbulo.</p>
+      </article>
+      <article>
+        <span class="seg-marca" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="6" y="12" width="28" height="18" rx="3"/><circle cx="16" cy="21" r="5"/><path d="M26 18h5M26 24h5M12 12V9h16v3"/>
+          </svg>
+        </span>
+        <h3>Autoclave e descartável</h3>
+        <p>Instrumental esterilizado em autoclave, luvas, agulha e campo de uso único,
+           abertos na sua frente. O que tocou em você não toca em mais ninguém.</p>
+      </article>
+      <article>
+        <span class="seg-marca" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="20" cy="22" r="11"/><circle cx="20" cy="11" r="4"/>
+          </svg>
+        </span>
+        <h3>Só titânio implant-grade</h3>
+        <p>Toda perfuração sai com joia de titânio ASTM F136, o mesmo grau usado em
+           implante dentro do corpo. Não trabalho com aço em perfuração: material
+           barato libera níquel, irrita e é a causa mais comum de rejeição.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ========== A SESSÃO (sequência real, por isso numerada) ========== -->
+  <section class="sessao" id="sessao">
+    <h2 class="titulo-secao">Do "oi" até você sair com a joia</h2>
+
+    <ol class="passos" id="passos">
+      <li>
+        <h3>Você me conta o que quer</h3>
+        <p>Pelo WhatsApp. Me diga o ponto que você pensou e, se der, mande uma foto da
+           região. Tem perfuração que depende do formato da sua anatomia — é melhor
+           descobrir isso antes de você sair de casa.</p>
+      </li>
+      <li>
+        <h3>Marcamos o ponto no espelho</h3>
+        <p>Desenho a marcação, você confere no espelho e só seguimos quando estiver do
+           jeito que você quer. Nada de agulha antes do seu sim.</p>
+      </li>
+      <li>
+        <h3>A perfuração</h3>
+        <p>Agulha estéril aberta na sua frente, um movimento só, alguns segundos.
+           A joia inicial entra na sequência.</p>
+      </li>
+      <li>
+        <h3>Você sai sabendo cuidar</h3>
+        <p>Te explico a higiene, o que evitar e quando voltar pra trocar a joia.
+           Qualquer dúvida depois, me chama — acompanhamento faz parte.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ========== JOIAS E CATÁLOGO ========== -->
+  <section class="joias" id="joias">
+    <div class="joias-texto">
+      <h2 class="titulo-secao">Joias que eu colocaria em mim</h2>
+      <p>Toda perfuração é feita com titânio implant-grade, nas medidas que cabem em
+         cada ponto. Tenho também um catálogo de peças em ouro. Pronta entrega no
+         estúdio e envio para todo o Brasil — se você não é de Goiânia, me chama que
+         eu te ajudo a acertar a medida antes de fechar.</p>
+    </div>
+
+    <!--
+      CATÁLOGOS
+      As capas saem dos próprios arquivos do Canva:
+        Titânio -> IMG/catalogo-capa.png
+        Ouro    -> IMG/catalogo-ouro.png   (ainda não existe; veja abaixo)
+      Para atualizar ou criar: abra o catálogo no Canva, exporte a primeira
+      página em PNG e salve com esse nome exato. Enquanto o arquivo do ouro
+      não existir, o cartão mostra uma capa provisória com o padrão da marca.
+
+      Os links vão para /view (visualização). NÃO use o link /edit: ele abre o
+      editor do Canva para quem clicar. E confira no Canva se o compartilhamento
+      está como "qualquer pessoa com o link pode ver", senão o cliente vê um
+      pedido de acesso.
+    -->
+    <div class="catalogos">
+
+      <a class="catalogo" href="https://www.canva.com/design/DAHDZX04-m8/o3oVINZDyW7Dkwms6T86nA/view" target="_blank" rel="noopener">
+        <span class="catalogo-moldura">
+          <img class="catalogo-capa" src="IMG/catalogo-capa.png" alt="Capa do Catálogo 2026 da Riguetti Piercing" width="1024" height="1448" loading="lazy">
+        </span>
+        <span class="catalogo-texto">
+          <span class="catalogo-nome">Catálogo 2026</span>
+          <span class="catalogo-desc">Titânio implant-grade, com preços e medidas.</span>
+          <span class="catalogo-acao">Abrir o catálogo</span>
+        </span>
+      </a>
+
+      <a class="catalogo catalogo-ouro" href="https://www.canva.com/design/DAHZ_y9xJZA/AfgKqlHAGhUYZeZu7X3BcA/view" target="_blank" rel="noopener">
+        <span class="catalogo-moldura">
+          <img class="catalogo-capa" src="/RiguettiPiercing/IMG/catalogo-capa.jpeg" alt="Capa do catálogo de joias em ouro da Riguetti Piercing" width="1024" height="1448" loading="lazy" data-capa-opcional>
+        </span>
+        <span class="catalogo-texto">
+          <span class="catalogo-nome">Joias em Ouro</span>
+          <span class="catalogo-desc">Peças em ouro, com preços e medidas.</span>
+          <span class="catalogo-acao">Abrir o catálogo</span>
+        </span>
+      </a>
+
+    </div>
+
+    <!--
+      VITRINE
+      Mesma lógica da galeria: salve fotos em IMG/joias/ com os nomes 01 a 06
+      (.jpg, .png ou .webp) e elas substituem os desenhos automaticamente.
+    -->
+    <ul class="vitrine" id="vitrine">
+      <li class="joia" data-foto="01" data-alt="Argola clicker de titânio">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><circle cx="60" cy="63" r="34"/><circle cx="60" cy="29" r="9" fill="currentColor" stroke="none"/></g></svg>
+        <h3>Argola clicker</h3>
+        <p>Septo, daith e hélix.</p>
+      </li>
+      <li class="joia" data-foto="02" data-alt="Labret de titânio">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M60 38v48"/><ellipse cx="60" cy="90" rx="17" ry="5"/><circle cx="60" cy="31" r="9" fill="currentColor" stroke="none"/></g></svg>
+        <h3>Labret</h3>
+        <p>A joia inicial da maioria dos pontos.</p>
+      </li>
+      <li class="joia" data-foto="03" data-alt="Curva de titânio">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M60 32c-34 6-34 50 0 56"/><circle cx="64" cy="30" r="8.5" fill="currentColor" stroke="none"/><circle cx="64" cy="90" r="8.5" fill="currentColor" stroke="none"/></g></svg>
+        <h3>Curva</h3>
+        <p>Umbigo, rook e Sobrancelha.</p>
+      </li>
+      <li class="joia" data-foto="04" data-alt="Barbela reta de titânio">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M34 60h52"/><circle cx="30" cy="60" r="8.5" fill="currentColor" stroke="none"/><circle cx="90" cy="60" r="8.5" fill="currentColor" stroke="none"/></g></svg>
+        <h3>Barbell reto</h3>
+        <p>Língua, transversal e mamilo.</p>
+      </li>
+      <li class="joia" data-foto="05" data-alt="Ferradura de titânio">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><path d="M38 88a34 34 0 1 1 44 0"/><circle cx="36" cy="92" r="8.5" fill="currentColor" stroke="none"/><circle cx="84" cy="92" r="8.5" fill="currentColor" stroke="none"/></g></svg>
+        <h3>Ferradura</h3>
+        <p>Argola que não fecha o círculo.</p>
+      </li>
+      <li class="joia" data-foto="06" data-alt="Microdermal de titânio">
+        <svg viewBox="0 0 120 120" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"><rect x="34" y="78" width="52" height="12" rx="6"/><path d="M60 78V58"/><circle cx="60" cy="48" r="11" fill="currentColor" stroke="none"/></g></svg>
+        <h3>Microdermal</h3>
+        <p>Microdermal, em áreas planas.</p>
+      </li>
+    </ul>
+
+    <div class="joias-acoes">
+      <a class="btn btn-zap btn-grande" data-zap="Oi Bia! Quero comprar uma joia do catálogo e receber em casa. Pode me ajudar com a medida?">Pedir ajuda com a medida</a>
+    </div>
+  </section>
+
+  <!-- ========== PERFURAÇÕES ÍNTIMAS ========== -->
+  <section class="intimas" id="intimas">
+    <div class="intimas-grid">
+      <div class="intimas-chamada">
+        <h2 class="titulo-secao">Perfurações íntimas</h2>
+        <p>Mamilo e genital fazem parte do meu trabalho, com o mesmo protocolo de
+           esterilização de qualquer outro ponto.</p>
+        <a class="btn btn-claro btn-grande" data-zap="Oi Bia! Gostaria de conversar sobre uma perfuração íntima.">Conversar em particular</a>
+      </div>
+
+      <dl class="intimas-dados">
+        <div>
+          <dt>Privacidade</dt>
+          <dd>Atendimento agendado em horário reservado, uma pessoa por vez e ninguém
+              mais na sala de procedimento. Você pode levar um acompanhante se preferir.</dd>
         </div>
-         <div class ="motivacional">
-            <h5>"Sua forma de se expressar é <b>original</b>, e os <b>piercings</b> refletem sua <b>personalidade</b>"</h5>
-         </div>
-     </div>
-    
+        <div>
+          <dt>Maiores de 18</dt>
+          <dd>Sem exceção, com documento com foto. Conversamos antes sobre anatomia,
+              cicatrização e o que esperar — perguntar não tem nada de constrangedor, realizo perfurações (masculinas e femininas).</dd>
+        </div>
+        <div>
+          <dt>Onde ver os trabalhos</dt>
+          <dd>O Instagram não permite esse conteúdo, então as fotos ficam num perfil
+              separado.
+              <a href="https://twitter.com/bia_piercer" target="_blank" rel="noopener">Ver o portfólio +18</a></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ========== TRABALHOS ========== -->
+  <section class="trabalhos" id="trabalhos">
+    <div class="trab-topo">
+      <h2 class="titulo-secao">Trabalhos recentes</h2>
+      <a class="link-ig" href="https://www.instagram.com/riguetti_piercing/" target="_blank" rel="noopener">Ver tudo no Instagram</a>
+    </div>
+
+    <!--
+      GALERIA AUTOMÁTICA — vira um carrossel em laço contínuo
+      Basta salvar as fotos em IMG/galeria/ com os nomes 01, 02, 03, 04, 05, 06
+      (.jpg, .jpeg, .png ou .webp). A página acha sozinha, troca a moldura pela
+      foto e monta o carrossel. Nenhuma edição de HTML é necessária.
+      Quer mais de seis? Copie uma linha <figure> e continue a numeração (07,
+      08...). Detalhes em IMG/galeria/LEIA-ME.txt
+      Para descrever cada foto (bom para o Google e leitores de tela), escreva
+      a descrição no data-alt da figure correspondente.
+    -->
+    <div class="galeria-palco">
+      <div class="galeria" id="galeria">
+        <figure class="moldura" data-foto="01" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 1</span></figure>
+        <figure class="moldura" data-foto="02" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 2</span></figure>
+        <figure class="moldura" data-foto="03" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 3</span></figure>
+        <figure class="moldura" data-foto="04" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 4</span></figure>
+        <figure class="moldura" data-foto="05" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 5</span></figure>
+        <figure class="moldura" data-foto="06" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 6</span></figure>
+        <figure class="moldura" data-foto="07" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 7</span></figure>
+        <figure class="moldura" data-foto="08" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 8</span></figure>
+        <figure class="moldura" data-foto="09" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 9</span></figure>
+        <figure class="moldura" data-foto="10" data-alt="Piercing aplicado pela Bia Riguetti"><span>foto 10</span></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEEDBACKS ==========
+       As seis avaliações abaixo são REAIS, copiadas do perfil da Riguetti
+       Piercing no Google. Os nomes vão como primeiro nome e inicial, que é a
+       convenção de depoimento: respeita a privacidade da cliente e continua
+       conferível no Google, onde a avaliação está pública.
+
+       Para adicionar: copie um bloco <li class="fb-item"> inteiro e cole
+       depois do último. Para remover: apague o bloco. A faixa se ajusta
+       sozinha, e se não sobrar nenhum a seção vira só a nota do Google.
+
+       Passo a passo no arquivo LEIA-ME-feedbacks.txt, aqui na pasta.
+  -->
+  <section class="feedbacks" id="feedbacks">
+
+    <div class="fb-topo">
+      <div class="fb-dizer">
+        <h2 class="titulo-secao">Depois que você sai daqui</h2>
+        <p class="fb-promessa">Acompanhamento não é cortesia, é parte do serviço.
+           Você sai com o meu WhatsApp e pode me chamar em qualquer momento da
+           cicatrização — pra tirar dúvida, mandar foto ou ajustar a joia.</p>
+      </div>
+
+      <a class="fb-nota" href="https://www.google.com/maps/place/Riguetti+Piercing+-+Jardim+Am%C3%A9rica,+Goi%C3%A2nia+-+GO,+74265-170/data=!4m2!3m1!1s0x935ef714e10129b1:0xd00a0fe90587ea52" target="_blank" rel="noopener">
+        <span class="fb-nota-num">5,0</span>
+        <span class="fb-nota-corpo">
+          <span class="fb-nota-estrelas" aria-hidden="true">★★★★★</span>
+          <span class="fb-nota-texto">400+ avaliações no Google</span>
+        </span>
+      </a>
+    </div>
+
+    <div class="fb-palco">
+      <ul class="fb-trilho" id="fb-trilho">
+
+        <li class="fb-item">
+          <blockquote><p>Melhor bodypiercing de Goiânia. Atenciosa até com o
+              período de cicatrização, cuidadosa com a higienização, paciente com
+              qualquer questionamento, atendimento virtual e presencial 10/10,
+              explicação dos cuidados excelentes. Enfim, única profissional que
+              confio cem por cento.</p></blockquote>
+          <div class="fb-assina">
+            <span class="fb-quem">Larisse K.</span>
+            <span class="fb-quando">Fevereiro de 2026</span>
+          </div>
+        </li>
+
+        <li class="fb-item">
+          <blockquote><p>A Bia foi muito atenciosa e paciente para me dar as
+              informações que eu precisava pelo WhatsApp. Foi pontual no
+              atendimento. O procedimento de perfuração foi tranquilo, com
+              materiais de proteção, tudo higienizado. As orientações do pós
+              procedimento foram ótimas e ela me deu toda assistência que
+              precisei. Voltarei em breve!</p></blockquote>
+          <div class="fb-assina">
+            <span class="fb-quem">Carolina P.</span>
+            <span class="fb-quando">Outubro de 2026</span>
+          </div>
+        </li>
+
+        <li class="fb-item">
+          <blockquote><p>A moça é super simpática e profissional, falou comigo
+              durante cada parte do processo e me deixou bem confortável! Os furos
+              do piercing são recentes e parecem estarem cicatrizando super bem,
+              ela fez um trabalho ótimo!</p></blockquote>
+          <div class="fb-assina">
+            <span class="fb-quem">Steph C.</span>
+            <span class="fb-quando">Setembro de 2026</span>
+          </div>
+        </li>
+
+        <li class="fb-item">
+          <blockquote><p>Atendimento excelente, além de ser super simpática.
+              Local totalmente higienizado, ambiente visualmente agradável e
+              harmônico. Joia maravilhosa e de uma qualidade incrível: salvou
+              minha orelha de algo que estava acontecendo por causa da joia
+              antiga, mesmo com os cuidados.</p></blockquote>
+          <div class="fb-assina">
+            <span class="fb-quem">Leonardo A.</span>
+            <span class="fb-quando">Agosto de 2026</span>
+          </div>
+        </li>
+
+        <li class="fb-item">
+          <blockquote><p>Minha experiência com a Bia foi sem dúvidas a melhor
+              que já tive com body piercer até hoje. Muito cuidadosa e técnica,
+              além de se preocupar em tirar todas as minhas dúvidas e me orientar
+              com o maior cuidado antes, durante e depois da perfuração. Piercing
+              é artigo de luxo, e a escolha de uma boa profissional é
+              indispensável.</p></blockquote>
+          <div class="fb-assina">
+            <span class="fb-quem">Meiling C.</span>
+            <span class="fb-quando">Abril de 2026</span>
+          </div>
+        </li>
+
+        <li class="fb-item">
+          <blockquote><p>Super qualidade no atendimento, estúdio muito lindinho
+              e asséptico! Adorei, e com certeza a Bia vai ser sempre minha opção
+              de bodypiercer aqui em Goiânia.</p></blockquote>
+          <div class="fb-assina">
+            <span class="fb-quem">Isadora O.</span>
+            <span class="fb-quando">Outubro de 2026</span>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <p class="fb-arraste" id="fb-arraste">Arraste para o lado</p>
+  </section>
+
+  <!-- ========== FRASE DA LOJA ========== -->
+  <section class="lema" aria-label="Lema da Riguetti Piercing">
+    <blockquote>
+      <p>Sua forma de se expressar é <em>original</em>, e os piercings refletem sua
+         <em>personalidade</em>.</p>
+    </blockquote>
+  </section>
+
+  <!-- ========== CUIDADOS / DÚVIDAS ========== -->
+  <section class="cuidados" id="cuidados">
+    <h2 class="titulo-secao">O que todo mundo pergunta antes</h2>
+
+    <div class="faq" id="faq">
+      <details>
+        <summary>Dói?</summary>
+        <div><p>Por alguns segundos. A agulha é afiada e o movimento é único, então o
+          que mais incomoda costuma ser a expectativa. Depois é mais uma ardencia do que
+          uma dor — e passa em poucas horas.</p></div>
+      </details>
+      <details>
+        <summary>Como eu limpo nos primeiros dias?</summary>
+        <div><p>Lavagem com sabonete líquido neutro, compressa com soro fisiológico duas vezes por dia e secagem com gaze. Nada de álcool,
+          água oxigenada, pomada ou ficar girando a joia com a mão. Você sai daqui com
+          o passo a passo escrito.</p></div>
+      </details>
+      <details>
+        <summary>Quando posso trocar a joia?</summary>
+        <div><p>Só depois de cicatrizado — o prazo muda de ponto pra ponto e está no
+          mapa aqui de cima. Trocar antes é o jeito mais rápido de inflamar ou fechar
+          o furo.</p></div>
+      </details>
+      <details>
+        <summary>Posso entrar na piscina, no mar ou na academia?</summary>
+        <div><p>Nas primeiras semanas, não. Água parada, areia e suor em contato com um
+          furo aberto são o caminho curto pra uma infecção. Se você tem viagem ou
+          competição marcada, me avise que a gente escolhe a melhor data.</p></div>
+      </details>
+      <details>
+        <summary>Atende menor de idade?</summary>
+        <div><p>Sim, com o responsável legal presente na sessão e documento com foto
+          dos dois.</p></div>
+      </details>
+      <details>
+        <summary>Meu piercing antigo inflamou. Você resolve?</summary>
+        <div><p>É necessario uma avalização PRESENCIAL, me chama no WhatsApp que marcamos a data e a hora. Muita irritação é joia errada, medida
+          curta ou material barato, e isso tem conserto. Se for infecção, eu te
+          oriento e indico procurar atendimento médico.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <!-- ========== CONTATO ========== -->
+  <section class="contato" id="contato">
+    <div class="contato-grid">
+      <div class="contato-chamada">
+        <h2 class="titulo-secao">Vamos marcar?</h2>
+        <p>Atendo com hora marcada, um cliente por vez. Me chama no WhatsApp com o
+           ponto que você quer e eu te passo valor e os horários livres.</p>
+        <a class="btn btn-zap btn-grande" data-zap="Oi Bia! Vim pelo site e gostaria de agendar um piercing.">Chamar no WhatsApp</a>
+      </div>
+
+      <dl class="contato-dados">
+        <div>
+          <dt>Atendimento</dt>
+          <!-- O Google mostra "abre às 09:00". Se quiser exibir os dias e o
+               horário de fechamento, troque a linha abaixo. -->
+          <dd>Abre às 09:00, somente com hora marcada pelo WhatsApp.</dd>
+        </div>
+        <div>
+          <dt>Estúdio</dt>
+          <dd>
+            R. 1102, Qd 207 - LT 23. Sala 7<br>
+            St. Pedro Ludovico, Goiânia - GO, 74265-170<br>
+            <a href="https://www.google.com/maps/place/Riguetti+Piercing+-+Jardim+Am%C3%A9rica,+Goi%C3%A2nia+-+GO,+74265-170/data=!4m2!3m1!1s0x935ef714e10129b1:0xd00a0fe90587ea52" target="_blank" rel="noopener">Abrir no Google Maps</a>
+            <span class="nota">Confirme a sala na mensagem de agendamento.</span>
+          </dd>
+        </div>
+        <div>
+          <dt>Avaliações</dt>
+          <dd><a href="https://www.google.com/maps/place/Riguetti+Piercing+-+Jardim+Am%C3%A9rica,+Goi%C3%A2nia+-+GO,+74265-170/data=!4m2!3m1!1s0x935ef714e10129b1:0xd00a0fe90587ea52" target="_blank" rel="noopener">5,0 de 5 em 400+ avaliações no Google</a></dd>
+        </div>
+        <div>
+          <dt>Instagram</dt>
+          <dd><a href="https://www.instagram.com/riguetti_piercing/" target="_blank" rel="noopener">@riguetti_piercing</a></dd>
+        </div>
+        <div>
+          <dt>Catálogos</dt>
+          <dd>
+            <a href="https://www.canva.com/design/DAHDZX04-m8/o3oVINZDyW7Dkwms6T86nA/view" target="_blank" rel="noopener">Catálogo 2026, em titânio</a><br>
+            <a href="https://www.canva.com/design/DAHZ_y9xJZA/AfgKqlHAGhUYZeZu7X3BcA/view" target="_blank" rel="noopener">Joias em Ouro</a>
+            <span class="nota">Pronta entrega, com envio para todo o Brasil.</span>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <img class="rodape-marca" src="IMG/REDUZIDA 2.png" alt="" width="72" height="72" loading="lazy">
+  <p class="rodape-quem">Riguetti Piercing, de Bia Riguetti. St. Pedro Ludovico, Goiânia — GO.</p>
+  <nav class="rodape-links" aria-label="Links da Riguetti Piercing">
+    <a href="https://www.instagram.com/riguetti_piercing/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.canva.com/design/DAHDZX04-m8/o3oVINZDyW7Dkwms6T86nA/view" target="_blank" rel="noopener">Catálogo 2026</a>
+    <a href="https://www.canva.com/design/DAHZ_y9xJZA/AfgKqlHAGhUYZeZu7X3BcA/view" target="_blank" rel="noopener">Joias em Ouro</a>
+    <a href="https://twitter.com/bia_piercer" target="_blank" rel="noopener">Portfólio íntimo (+18)</a>
+  </nav>
+</footer>
+
+<a class="flutuante" data-zap="Oi Bia! Vim pelo site e gostaria de agendar um piercing." aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.13h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.36c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.21-8.24 8.21Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.1-.5.11-.11.25-.29.37-.44.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.87.86-.87 2.09s.9 2.43 1.02 2.6c.12.16 1.76 2.69 4.26 3.77.6.26 1.06.41 1.42.53.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.19.21-.58.21-1.08.15-1.18-.06-.11-.23-.17-.48-.29Z"/>
+  </svg>
+  <span>Agendar</span>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
-

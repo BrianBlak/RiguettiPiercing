@@ -1,0 +1,58 @@
+GALERIA DE TRABALHOS - como publicar as fotos
+=============================================
+
+A galeria e automatica. Voce NAO precisa editar nenhum arquivo de codigo.
+
+PASSO UNICO
+-----------
+Salve as fotos nesta pasta (IMG/galeria/) com estes nomes exatos:
+
+   01   02   03   04   05   06
+
+A extensao pode ser .jpg, .jpeg, .png ou .webp. Exemplos validos:
+   01.jpg   02.png   03.webp
+
+Ao abrir o site, a pagina procura cada arquivo e troca a moldura pela foto.
+O que nao existir continua aparecendo como moldura com o padrao da marca,
+entao pode comecar com 2 ou 3 fotos e ir completando depois.
+
+DE ONDE TIRAR AS FOTOS
+----------------------
+O Instagram nao deixa o site puxar as imagens automaticamente (exige login).
+Baixe as fotos de um destes lugares e renomeie:
+  - Instagram @riguetti_piercing: abra o post, menu (...) e salve a imagem
+  - Google Meu Negocio: as fotos ja publicadas na ficha do estudio
+  - Direto do celular, que costuma ter a melhor qualidade
+
+RECOMENDACOES
+-------------
+  - Fotos em pe (retrato), proporcao proxima de 4x5
+  - No maximo 1200px de largura, para a pagina carregar rapido
+  - Luz boa e foco no piercing, nao no rosto inteiro
+
+DESCRICAO DA FOTO (opcional, mas ajuda no Google)
+-------------------------------------------------
+No arquivo index.html, procure por data-foto="01" e escreva a descricao no
+data-alt ao lado. Exemplo:
+
+   data-alt="Helix com argola de titanio"
+
+Isso e o que leitores de tela leem em voz alta e o que o Google usa para
+entender a imagem.
+
+TROCAR A ORDEM
+--------------
+E so renomear os arquivos: o 01 aparece primeiro, o 06 por ultimo.
+
+
+FOTOS DAS JOIAS (a vitrine da secao "Joias")
+--------------------------------------------
+Funciona igualzinho, mas noutra pasta: crie IMG/joias/ e salve as fotos das
+pecas com os nomes 01 a 06 (.jpg, .png ou .webp). Cada foto entra no lugar do
+desenho da peca correspondente:
+
+   01 argola clicker   02 labret        03 curva
+   04 barbela reta     05 ferradura     06 Micro dermal
+
+Enquanto a foto nao existir, o desenho continua aparecendo. Para essas, foto
+quadrada funciona melhor que retrato.
